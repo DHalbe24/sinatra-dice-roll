@@ -10,7 +10,7 @@ use(BetterErrors::Middleware)
 BetterErrors.application_root = __dir__
 BetterErrors::Middleware.allow_ip!('0.0.0.0/0.0.0.0')
 
-get ("/") do
+get("/") do
   erb(:elephant)
 end
 
@@ -43,9 +43,9 @@ get("/dice/2/10") do
 end
 
 get("/dice/1/20") do
-  @die20 = rand(1..20)
+  die20 = rand(1..20)
 
-  @outcome20 = "You rolled a(n) #{@die20}."
+  @outcome20 = "You rolled a(n) #{die20}."
 
   erb(:one_twenty)
 end
