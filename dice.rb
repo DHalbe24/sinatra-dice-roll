@@ -80,4 +80,3 @@ get("/100/6") do
 
   erb(:one_hundred_six)
 end
-
