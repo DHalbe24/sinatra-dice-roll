@@ -5,10 +5,6 @@ require "sinatra/reloader"
 require "better_errors"
 require "binding_of_caller"
 
-get("/") do
-  "Hello World"
-end
-
 # Need this configuration for better_errors
 use(BetterErrors::Middleware)
 BetterErrors.application_root = __dir__
